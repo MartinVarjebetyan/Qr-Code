@@ -1,0 +1,67 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Roboto:wght@500&display=swap');
+
+/* Estilos globales */
+:root {
+  --color-fondo: lightgray;
+  --color-bloque: white;
+  --borde-radius: 20px;
+  --box-shadow: black;
+  --fuente-attribution: 'Amatic SC', cursive;
+  --fuente-attribution1: 'Amatic SC', cursive;
+  --color-attribution1: rgb(139, 131, 131);
+}
+
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-fondo);
+}
+
+
+.bloque-contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  width: 320px;
+  height: 500px;
+  border-radius: var(--borde-radius);
+  box-shadow: var(--box-shadow);
+  background-color: var(--color-bloque);
+  padding-top: 10px;
+}
+
+
+.bloque-contenedor__contenedor1 {
+  padding: 20px;
+}
+
+
+.bloque-contenedor__imagen {
+  border-radius: var(--borde-radius);
+}
+
+
+.bloque-contenedor__attribution { 
+  font-size: 22px; 
+  text-align: center; 
+  font-family: var(--fuente-attribution);
+}
+
+
+.bloque-contenedor__attribution1 {
+  font-size: 15px;
+  text-align: center;
+  font-family: var(--fuente-attribution1);
+  color: var(--color-attribution1);
+  padding: 15px;
+}
